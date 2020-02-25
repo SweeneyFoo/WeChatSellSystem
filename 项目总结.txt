@@ -1,0 +1,25 @@
+Wechat 项目总结
+
+步骤
+1.建表 
+    WeChatSellSql.sql
+2.搭建环境
+    centos7 idea maven3 mysql5.7 jdk1.8
+3.log配置
+    INFO，ERROR区分文件
+
+
+
+
+
+知识：
+    日志框架：
+        实现日志输出的工具包
+        能力：定制输出目标，定制输出格式，携带上下文信息，运行时选择性输出，灵活的配置，优异的性能
+        常见JUL JCL Log4j Log4j2 Logback jboss-logging SLF4j
+            日志门面 JCL SLF4j jboss-logging
+            日志实现 Log4j Log4j2 Logback
+            
+            选择SLF4j+Logback
+            
+    @Slf4j，log报错：需要添加插件lombok，然后重启
