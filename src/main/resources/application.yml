@@ -8,6 +8,11 @@ Spring:
     show-sql: true
 
 
+server:
+  servlet:
+    context-path: /sell
+
+
 #server:
 #  context-path: /sell
 #logging:

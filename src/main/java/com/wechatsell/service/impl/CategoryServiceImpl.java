@@ -15,11 +15,13 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public ProductCategory findOne(Integer categoryId) {
+
         return repository.findById(categoryId).get();
     }
 
     @Override
     public List<ProductCategory> findAll() {
+
         return repository.findAll();
     }
 
@@ -30,6 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public ProductCategory save(ProductCategory productCategory) {
+
         return repository.save(productCategory);
     }
 }

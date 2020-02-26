@@ -8,6 +8,7 @@ Wechat 项目总结
 3.log配置
     INFO，ERROR区分文件
 
+4.Dao层、service层，controller构建
 
 
 
@@ -23,3 +24,29 @@ Wechat 项目总结
             选择SLF4j+Logback
             
     @Slf4j，log报错：需要添加插件lombok，然后重启
+	
+	
+	
+	Lambda表达式！！学习
+	数据库查询不放入for循环！
+	
+	
+	
+	BeanUtils.copyProperties(productInfo,productInfoVO)拷贝不成功：
+		ProductInfo对象未加入@Data（lombok）注解，无法使用get，set方法
+		
+	
+	服务器nginx
+		修改
+		server {
+			listen       80;
+			server_name  sell.com;
+
+			location /sell/ {
+				proxy_pass http://本机ipv4地址:8080/sell/;
+			}
+		配置结束后 nginx -s reload
+		
+		win10 修改host：添加服务器 ip sell.com  (此为本地服务器解析DNS，域名sell.com直接跳转远程服务器)
+
+		
