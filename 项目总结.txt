@@ -8,7 +8,9 @@ Wechat 项目总结
 3.log配置
     INFO，ERROR区分文件
 
-4.Dao层、service层，controller构建
+4.买家商品Dao层、service层，controller构建（api）
+
+5.买家订单  实体类--》Dao---》service---》controller（api）
 
 
 
